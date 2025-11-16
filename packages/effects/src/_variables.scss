@@ -12,5 +12,38 @@
   --focus-default: 0px 0px 0px 2px var(--blue5);
   --focus-accent: 0px 0px 0px 2px var(--blue8);
   --focus-inverse: 0px 0px 0px 2px var(--white);
+
+  // Radius
+  --radius-xs: 0.125rem;
+  --radius-sm: 0.25rem;
+  --radius-md: 0.375rem;
+  --radius-lg: 0.5rem;
+  --radius-xl: 0.75rem;
+  --radius-2xl: 1rem;
+  --radius-3xl: 1.5rem;
+  --radius-4xl: 2rem;
+
+  // Blur
+  --blur-xs: 0.25rem;
+  --blur-sm: 0.5rem;
+  --blur-md: 0.75rem;
+  --blur-lg: 1.0rem;
+  --blur-xl: 1.5rem;
+  --blur-2xl: 2.5rem;
+  --blur-3xl: 4.0rem;
+
+  // Perspective
+  --perspective-dramatic: 6.25rem;
+  --perspective-near: 18.75rem;
+  --perspective-normal: 31.25rem;
+  --perspective-midrange: 50.0rem;
+  --perspective-distant: 75.0rem;
+
+  // Aspect Video
+  --aspect-video: 16 / 9;
+
+  // Transition Duration
+  --default-transition-duration: 150ms;
+  --default-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 

@@ -1,6 +1,6 @@
 {
   "name": "@new-ui/effects",
-  "version": "0.1.7",
+  "version": "0.1.8",
   "description": "Layering, elevations, and effects styles",
   "source": "src/index.scss",
   "main": "dist/index.css",

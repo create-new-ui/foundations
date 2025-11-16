@@ -124,27 +124,26 @@ Borders | Role
 
 #### Spacings
 
-Token | Size (px/rem)
-:--- | :---
-**`--spacing-00`** | 0 / 0
-**`--spacing-01`** | 2 / 0.125
-**`--spacing-02`** | 4 / 0.25
-**`--spacing-03`** | 6 / 0.375
-**`--spacing-04`** | 8 / 0.5
-**`--spacing-05`** | 12 / 0.75
-**`--spacing-06`** | 16 / 1
-**`--spacing-07`** | 20 / 1.25
-**`--spacing-08`** | 24 / 1.5
-**`--spacing-09`** | 32 / 2
-**`--spacing-10`** | 40 / 2.5
-**`--spacing-11`** | 48 / 3
-**`--spacing-12`** | 56 / 3.5
-**`--spacing-13`** | 64 / 4
-**`--spacing-14`** | 72 / 4.5
-**`--spacing-15`** | 80 / 5
-**`--spacing-16`** | 96 / 6
-**`--spacing-17`** | 120 / 7.5
-**`--spacing-18`** | 160 / 10
+Token | Source | Size (px/rem)
+:--- | :--- | :---
+**`--spacing-zero`** | `--spacing-00` | 0 / 0
+**`--spacing-xs`** | `--spacing-02` | 4 / 0.25
+**`--spacing-s`** | `--spacing-04` | 8 / 0.5
+**`--spacing-m`** | `--spacing-05` | 12 / 0.75
+**`--spacing-l`** | `--spacing-06` | 16 / 1
+**`--spacing-xl`** | `--spacing-08` | 24 / 1.5
+**`--spacing-xxl`** | `--spacing-09` | 32 / 2
+**`--spacing-xxxl`** | `--spacing-11` | 48 / 3
+
+#### Sizing
+
+Token | Source | Size (px/rem)
+:--- | :--- | :---
+**`--size-xs`** | `--spacing-06` | 16 / 1
+**`--size-s`** | `--spacing-08` | 24 / 1.5
+**`--size-m`** | `--spacing-09` | 32 / 2
+**`--controls-size-default`** | `--spacing-09` | 32 / 2
+**`--controls-size-small`** | `--spacing-08` | 24 / 1.5
 
 #### Typography
 

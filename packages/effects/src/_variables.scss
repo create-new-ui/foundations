@@ -1,10 +1,10 @@
 :root {
   // Shadows
-  --dialog-strong: 0px 16px 48px 0px rgba(22, 22, 22, 0.24);
-  --dialog: 0px 0px 0px 1px rgba(22, 22, 22, 0.12), 
-            0px 12px 30px 0px rgba(22, 22, 22, 0.16), 
-            0px 2px 3px 0px rgba(22, 22, 22, 0.12);
-  --content: 0px 2px 3px 0px rgba(22, 22, 22, 0.08);
+  --dialog-strong: 0px 16px 48px rgba(0, 0, 0, 0.16);
+  --dialog: 0px 0px 0px 0.5px rgba(0, 0, 0, 0.06),
+            0px 12px 24px rgba(0, 0, 0, 0.08), 
+            0px 2px 3px rgba(0, 0, 0, 0.04);
+  --content: 0px 2px 3px rgba(0, 0, 0, 0.06);
   --canvas: 0px 0px 0px rgba(0, 0, 0, 0);
   --keyboard-key: 0 2px 0px var(--grey4);
 
@@ -13,20 +13,37 @@
   --focus-accent: 0px 0px 0px 2px var(--blue8);
   --focus-inverse: 0px 0px 0px 2px var(--white);
 
-  // Border widths
-  --border-muted-width-01: inset 0px 0px 0px 1px var(--grey2);
-  --border-muted-width-02: inset 0px 0px 0px 2px var(--grey2);
-  --border-muted-width-04: inset 0px 0px 0px 4px var(--grey2);
-  --border-width-01: inset 0px 0px 0px 1px var(--grey4);
-  --border-width-02: inset 0px 0px 0px 2px var(--grey4);
-  --border-width-04: inset 0px 0px 0px 4px var(--grey4);
-  --border-strong-muted-width-01: inset 0px 0px 0px 1px var(--grey6);
-  --border-strong-muted-width-02: inset 0px 0px 0px 2px var(--grey6);
-  --border-strong-muted-width-04: inset 0px 0px 0px 4px var(--grey6);
-  --border-bottom-muted-width-01: inset 0px -1px 0px var(--grey2);
-  --border-bottom-width-01: inset 0px -1px 0px var(--grey4);
-  --border-bottom-strong-width-01: inset 0px -1px 0px var(--grey6);
-  --border-bottom-muted-width-02: inset 0px -2px 0px var(--grey2);
-  --border-bottom-width-02: inset 0px -2px 0px var(--grey4);
-  --border-bottom-strong-width-02: inset 0px -2px 0px var(--grey6);
+  // Radius
+  --radius-xs: 0.125rem;
+  --radius-sm: 0.25rem;
+  --radius-md: 0.375rem;
+  --radius-lg: 0.5rem;
+  --radius-xl: 0.75rem;
+  --radius-2xl: 1rem;
+  --radius-3xl: 1.5rem;
+  --radius-4xl: 2rem;
+
+  // Blur
+  --blur-xs: 0.25rem;
+  --blur-sm: 0.5rem;
+  --blur-md: 0.75rem;
+  --blur-lg: 1.0rem;
+  --blur-xl: 1.5rem;
+  --blur-2xl: 2.5rem;
+  --blur-3xl: 4.0rem;
+
+  // Perspective
+  --perspective-dramatic: 6.25rem;
+  --perspective-near: 18.75rem;
+  --perspective-normal: 31.25rem;
+  --perspective-midrange: 50.0rem;
+  --perspective-distant: 75.0rem;
+
+  // Aspect Video
+  --aspect-video: 16 / 9;
+
+  // Transition Duration
+  --default-transition-duration: 150ms;
+  --default-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+

@@ -36,7 +36,7 @@ Dark warm | `dark--warm`
 Dark cold | `dark--cold`
 
 
-#### Usage guide
+#### Utility classes, naming convention
 - All classes associated with the New UI are prefixed with a global namespace followed by a hyphen: `nu-`
 - In addition to a global namespace, we added prefixes to each class to make it more apparent what job that class is doing using BEM syntax.
     - `c-` for UI components.
@@ -47,7 +47,7 @@ Dark cold | `dark--cold`
 
 ---
 
-### Design Tokens & Primitives
+### Design tokens
 
 #### Colors
 
@@ -76,14 +76,6 @@ Button | Role
 **`--button-active`** | Primary button active
 **`--button-disabled`** | Disabled button background
 
-Icon | Role
-:--- | :---
-**`--icon-primary`** | Primary icons
-**`--icon-secondary`** | Secondary icons
-**`--icon-disabled`** | Disabled icons
-**`--icon-on-color`** | Icon on interactive colors
-**`--icon-inked`** | Inked icons
-
 Link | Role
 :--- | :---
 **`--link`** | Primary link
@@ -98,16 +90,16 @@ Support | Role
 **`--support-success`** | Success
 **`--support-info`** | Information
 
-Text | Role
+Content | Role
 :--- | :---
-**`--text-primary`** | Primary body copy
-**`--text-secondary`** | Secondary text color
-**`--text-secondary-alt`** | Secondary text color alt
-**`--text-placeholder`** | Placeholder text color
-**`--text-on-color`** | Text on interactive color
-**`--text-error`** | Error message
-**`--text-success`** | Success message
-**`--text-inked`** | Inked text
+**`--content-primary`** | Primary body copy
+**`--content-secondary`** | Secondary text color
+**`--content-secondary-alt`** | Secondary text color alt
+**`--content-placeholder`** | Placeholder text color
+**`--content-on-color`** | Text on interactive color
+**`--content-error`** | Error message
+**`--content-success`** | Success message
+**`--content-inked`** | Inked text
 
 #### Effects
 
@@ -125,34 +117,28 @@ Focus | Role
 **`--focus-accent`** | Accent focus
 **`--focus-inverse`** | Focus inverse
 
-Borders | Role
-:--- | :---
-**`--border-width-01`** | Default border width
-**`--border-width-02`** | Used for the selection and focus order
-
 #### Spacings
 
-Token | Size (px/rem)
-:--- | :---
-**`--spacing-00`** | 0 / 0
-**`--spacing-01`** | 2 / 0.125
-**`--spacing-02`** | 4 / 0.25
-**`--spacing-03`** | 6 / 0.375
-**`--spacing-04`** | 8 / 0.5
-**`--spacing-05`** | 12 / 0.75
-**`--spacing-06`** | 16 / 1
-**`--spacing-07`** | 20 / 1.25
-**`--spacing-08`** | 24 / 1.5
-**`--spacing-09`** | 32 / 2
-**`--spacing-10`** | 40 / 2.5
-**`--spacing-11`** | 48 / 3
-**`--spacing-12`** | 56 / 3.5
-**`--spacing-13`** | 64 / 4
-**`--spacing-14`** | 72 / 4.5
-**`--spacing-15`** | 80 / 5
-**`--spacing-16`** | 96 / 6
-**`--spacing-17`** | 120 / 7.5
-**`--spacing-18`** | 160 / 10
+Token | Source | Size (px/rem)
+:--- | :--- | :---
+**`--spacing-zero`** | `--spacing-00` | 0 / 0
+**`--spacing-xs`** | `--spacing-02` | 4 / 0.25
+**`--spacing-s`** | `--spacing-04` | 8 / 0.5
+**`--spacing-m`** | `--spacing-05` | 12 / 0.75
+**`--spacing-l`** | `--spacing-06` | 16 / 1
+**`--spacing-xl`** | `--spacing-08` | 24 / 1.5
+**`--spacing-xxl`** | `--spacing-09` | 32 / 2
+**`--spacing-xxxl`** | `--spacing-11` | 48 / 3
+
+#### Sizing
+
+Token | Source | Size (px/rem)
+:--- | :--- | :---
+**`--size-xs`** | `--spacing-06` | 16 / 1
+**`--size-s`** | `--spacing-08` | 24 / 1.5
+**`--size-m`** | `--spacing-09` | 32 / 2
+**`--controls-size-default`** | `--spacing-09` | 32 / 2
+**`--controls-size-small`** | `--spacing-08` | 24 / 1.5
 
 #### Typography
 
@@ -178,71 +164,3 @@ Utility (Desktop) | Utility (Mobile) | Role
 **`--desktop-code`** | **`--mobile-code`** | Code
 
 > Note: To set line height, simply add the prefix `--lh` to the font size variables. For instance, `--desktop-body-xl` becomes `--lh-desktop-body-xl`.
-
----
-
-### The new reset
-
-A thoughtful SCSS, CSS reset that preserves browser defaults while giving you complete design control. New UI reset eliminates cross-browser inconsistencies without being overly opinionated, allowing you to build upon a clean foundation.
-
-```scss
-// https://cdn.jsdelivr.net/npm/@new-ui/reset@latest/dist/index.css
-
-*, *::before, *::after {
-  box-sizing: border-box;
-}
-
-html {
-  -moz-text-size-adjust: none;
-  -webkit-text-size-adjust: none;
-  text-size-adjust: none;
-  vertical-align: baseline;
-}
-
-body, h1, h2, h3, h4, p,
-figure, blockquote, dl, dd {
-  margin: 0;
-  padding: 0;
-  margin-block-end: 0;
-}
-
-ul[role='list'],
-ol[role='list'] {
-  list-style: none;
-}
-
-body {
-  min-height: 100vh;
-  line-height: 1.5;
-}
-
-h1, h2,
-h3, h4 {
-  text-wrap: balance;
-}
-
-a:not([class]) {
-  text-decoration-skip-ink: auto;
-}
-
-img,
-picture {
-  max-width: 100%;
-  display: block;
-}
-
-input, textarea, button, select {
-  font-family: inherit;
-  font-size: inherit;
-  margin: 0;
-}
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
-:target {
-  scroll-margin-block: 5ex;
-}
-```

@@ -1,20 +1,10 @@
-// Spacer blocks 
+// Spacer blocks
 
-.nu-c-spacer-1 { display: block; height: var(--spacing-01);}
-.nu-c-spacer-2 { display: block; height: var(--spacing-02);}
-.nu-c-spacer-3 { display: block; height: var(--spacing-03);}
-.nu-c-spacer-4 { display: block; height: var(--spacing-04);}
-.nu-c-spacer-5 { display: block; height: var(--spacing-05);}
-.nu-c-spacer-6 { display: block; height: var(--spacing-06);}
-.nu-c-spacer-7 { display: block; height: var(--spacing-07);}
-.nu-c-spacer-8 { display: block; height: var(--spacing-08);}
-.nu-c-spacer-9 { display: block; height: var(--spacing-09);}
-.nu-c-spacer-10 { display: block; height: var(--spacing-10);}
-.nu-c-spacer-11 { display: block; height: var(--spacing-11);}
-.nu-c-spacer-12 { display: block; height: var(--spacing-12);}
-.nu-c-spacer-13 { display: block; height: var(--spacing-13);}
-.nu-c-spacer-14 { display: block; height: var(--spacing-14);}
-.nu-c-spacer-15 { display: block; height: var(--spacing-15);}
-.nu-c-spacer-16 { display: block; height: var(--spacing-16);}
-.nu-c-spacer-17 { display: block; height: var(--spacing-17);}
-.nu-c-spacer-18 { display: block; height: var(--spacing-18);}
+.nu-c-spacer-zero { display: block; height: var(--spacing-zero); }
+.nu-c-spacer-xs { display: block; height: var(--spacing-xs); }
+.nu-c-spacer-s { display: block; height: var(--spacing-s); }
+.nu-c-spacer-m { display: block; height: var(--spacing-m); }
+.nu-c-spacer-l { display: block; height: var(--spacing-l); }
+.nu-c-spacer-xl { display: block; height: var(--spacing-xl); }
+.nu-c-spacer-xxl { display: block; height: var(--spacing-xxl); }
+.nu-c-spacer-xxxl { display: block; height: var(--spacing-xxxl); }

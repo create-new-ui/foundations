@@ -76,14 +76,6 @@ Button | Role
 **`--button-active`** | Primary button active
 **`--button-disabled`** | Disabled button background
 
-Icon | Role
-:--- | :---
-**`--icon-primary`** | Primary icons
-**`--icon-secondary`** | Secondary icons
-**`--icon-disabled`** | Disabled icons
-**`--icon-on-color`** | Icon on interactive colors
-**`--icon-inked`** | Inked icons
-
 Link | Role
 :--- | :---
 **`--link`** | Primary link
@@ -98,16 +90,16 @@ Support | Role
 **`--support-success`** | Success
 **`--support-info`** | Information
 
-Text | Role
+Content | Role
 :--- | :---
-**`--text-primary`** | Primary body copy
-**`--text-secondary`** | Secondary text color
-**`--text-secondary-alt`** | Secondary text color alt
-**`--text-placeholder`** | Placeholder text color
-**`--text-on-color`** | Text on interactive color
-**`--text-error`** | Error message
-**`--text-success`** | Success message
-**`--text-inked`** | Inked text
+**`--content-primary`** | Primary body copy
+**`--content-secondary`** | Secondary text color
+**`--content-secondary-alt`** | Secondary text color alt
+**`--content-placeholder`** | Placeholder text color
+**`--content-on-color`** | Text on interactive color
+**`--content-error`** | Error message
+**`--content-success`** | Success message
+**`--content-inked`** | Inked text
 
 #### Effects
 

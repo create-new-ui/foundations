@@ -47,7 +47,7 @@ Dark cold | `dark--cold`
 
 ---
 
-### Design Tokens & Primitives
+### Semantic Design Tokens
 
 #### Colors
 
@@ -117,11 +117,6 @@ Focus | Role
 **`--focus-accent`** | Accent focus
 **`--focus-inverse`** | Focus inverse
 
-Borders | Role
-:--- | :---
-**`--border-width-01`** | Default border width
-**`--border-width-02`** | Used for the selection and focus order
-
 #### Spacings
 
 Token | Source | Size (px/rem)
@@ -169,71 +164,3 @@ Utility (Desktop) | Utility (Mobile) | Role
 **`--desktop-code`** | **`--mobile-code`** | Code
 
 > Note: To set line height, simply add the prefix `--lh` to the font size variables. For instance, `--desktop-body-xl` becomes `--lh-desktop-body-xl`.
-
----
-
-### The new reset
-
-A thoughtful SCSS, CSS reset that preserves browser defaults while giving you complete design control. New UI reset eliminates cross-browser inconsistencies without being overly opinionated, allowing you to build upon a clean foundation.
-
-```scss
-// https://cdn.jsdelivr.net/npm/@new-ui/reset@latest/dist/index.css
-
-*, *::before, *::after {
-  box-sizing: border-box;
-}
-
-html {
-  -moz-text-size-adjust: none;
-  -webkit-text-size-adjust: none;
-  text-size-adjust: none;
-  vertical-align: baseline;
-}
-
-body, h1, h2, h3, h4, p,
-figure, blockquote, dl, dd {
-  margin: 0;
-  padding: 0;
-  margin-block-end: 0;
-}
-
-ul[role='list'],
-ol[role='list'] {
-  list-style: none;
-}
-
-body {
-  min-height: 100vh;
-  line-height: 1.5;
-}
-
-h1, h2,
-h3, h4 {
-  text-wrap: balance;
-}
-
-a:not([class]) {
-  text-decoration-skip-ink: auto;
-}
-
-img,
-picture {
-  max-width: 100%;
-  display: block;
-}
-
-input, textarea, button, select {
-  font-family: inherit;
-  font-size: inherit;
-  margin: 0;
-}
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
-:target {
-  scroll-margin-block: 5ex;
-}
-```

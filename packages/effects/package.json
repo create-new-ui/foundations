@@ -1,7 +1,7 @@
 {
   "name": "@new-ui/effects",
-  "version": "0.1.6",
-  "description": "Layering, elevations, and effects styles.",
+  "version": "0.1.7",
+  "description": "Layering, elevations, and effects styles",
   "source": "src/index.scss",
   "main": "dist/index.css",
   "targets": {
@@ -28,8 +28,8 @@
   },
   "homepage": "https://github.com/NewDesignFile/foundations#readme",
   "devDependencies": {
-    "@parcel/transformer-sass": "^2.14.4",
-    "autoprefixer": "^10.4.21",
-    "parcel": "^2.14.4"
+    "@parcel/transformer-sass": "^2.16.1",
+    "autoprefixer": "^10.4.22",
+    "parcel": "^2.16.1"
   }
 }

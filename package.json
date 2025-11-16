@@ -1,6 +1,6 @@
 {
   "name": "@new-ui/foundations",
-  "version": "0.3.1",
+  "version": "0.3.2",
   "description": "New UI foundations",
   "source": "src/index.scss",
   "main": "dist/index.css",
@@ -41,15 +41,15 @@
   },
   "homepage": "https://github.com/NewDesignFile/foundations#readme",
   "devDependencies": {
-    "@parcel/transformer-sass": "^2.16.0",
-    "autoprefixer": "^10.4.21",
-    "parcel": "^2.16.0"
+    "@parcel/transformer-sass": "^2.16.1",
+    "autoprefixer": "^10.4.22",
+    "parcel": "^2.16.1"
   },
   "dependencies": {
-    "@new-ui/colors": "^2.2.0",
-    "@new-ui/effects": "^0.1.6",
+    "@new-ui/colors": "^2.2.1",
+    "@new-ui/effects": "^0.1.7",
     "@new-ui/reset": "^0.1.0",
-    "@new-ui/spacings": "^0.1.6",
-    "@new-ui/typography": "^0.1.9"
+    "@new-ui/spacings": "^0.1.7",
+    "@new-ui/typography": "^0.1.10"
   }
 }

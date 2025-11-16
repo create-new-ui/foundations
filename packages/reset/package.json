@@ -33,8 +33,8 @@
   },
   "homepage": "https://github.com/NewDesignFile/foundations#readme",
   "devDependencies": {
-    "@parcel/transformer-sass": "^2.16.0",
-    "autoprefixer": "^10.4.21",
-    "parcel": "^2.16.0"
+    "@parcel/transformer-sass": "^2.16.1",
+    "autoprefixer": "^10.4.22",
+    "parcel": "^2.16.1"
   }
 }

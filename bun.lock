@@ -5,7 +5,7 @@
       "name": "@new-ui/foundations",
       "dependencies": {
         "@new-ui/colors": "^2.2.1",
-        "@new-ui/effects": "^0.1.7",
+        "@new-ui/effects": "^0.1.8",
         "@new-ui/reset": "^0.1.0",
         "@new-ui/spacings": "^0.1.7",
         "@new-ui/typography": "^0.1.10",
@@ -50,7 +50,7 @@
 
     "@new-ui/colors": ["@new-ui/colors@2.2.1", "", {}, "sha512-poWKoN+NZmyzS517/k/kpTxxmd2V6TZRLEYG1v0ZQcY14MLkkhJ2BhKx6j9v7ZlNp7Ez2H7zf6W5LG/Eutyktg=="],
 
-    "@new-ui/effects": ["@new-ui/effects@0.1.7", "", {}, "sha512-w4iL9smSCMpA3tGMuKyM39HnwWsO2Kkin6FHTJhUzEq91renm3p8Ph1i/AgbIFZObqnsPKVn4Fli8TPHr/S+lw=="],
+    "@new-ui/effects": ["@new-ui/effects@0.1.8", "", {}, "sha512-Pxx9DsSxRJCUZpHmF0ih0vekY/vCU3EcInsE2181W1QCrJkL6HTxiza6V5yuJYMQezSu+9eVNwUkfSv0655ITA=="],
 
     "@new-ui/reset": ["@new-ui/reset@0.1.0", "", {}, "sha512-JXGA17uuq4IgOkh91OHOPYxGO+DT/EZcQkGCNi0z4KM7ICmN3SoTZDR6HxemNh34FcdHXFSkHt8BRcm2WjY1lg=="],
 

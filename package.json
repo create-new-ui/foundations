@@ -47,7 +47,7 @@
   },
   "dependencies": {
     "@new-ui/colors": "^2.2.1",
-    "@new-ui/effects": "^0.1.7",
+    "@new-ui/effects": "^0.1.8",
     "@new-ui/reset": "^0.1.0",
     "@new-ui/spacings": "^0.1.7",
     "@new-ui/typography": "^0.1.10"

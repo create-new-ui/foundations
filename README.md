@@ -36,7 +36,7 @@ Dark warm | `dark--warm`
 Dark cold | `dark--cold`
 
 
-#### Usage guide
+#### Utility classes, naming convention
 - All classes associated with the New UI are prefixed with a global namespace followed by a hyphen: `nu-`
 - In addition to a global namespace, we added prefixes to each class to make it more apparent what job that class is doing using BEM syntax.
     - `c-` for UI components.
@@ -47,7 +47,7 @@ Dark cold | `dark--cold`
 
 ---
 
-### Semantic Design Tokens
+### Design tokens
 
 #### Colors
 

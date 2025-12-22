@@ -21,7 +21,7 @@
     "build": "parcel build",
     "lint": "stylelint \"**/*.scss\"",
     "format": "prettier --write .",
-    "update:deps": "npx npm-check-updates --deep --upgrade && bun install",
+    "update:deps": "bunx npm-check-updates --deep --upgrade && bun install",
     "build:packages": "bun run --filter './packages/*' build",
     "clean:install": "rm -rf node_modules bun.lock .parcel-cache packages/*/node_modules packages/*/bun.lock packages/*/.parcel-cache && bun install"
   },

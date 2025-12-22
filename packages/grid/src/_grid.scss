@@ -8,21 +8,44 @@ $breakpoints: (
   lg: 85rem,
 ) !default;
 
+/// Breakpoint mixin using modern range syntax
+/// @param {String} $breakpoint - Breakpoint name from $breakpoints map
 @mixin breakpoint($breakpoint) {
   @if map.has-key($breakpoints, $breakpoint) {
-    @media (min-width: map.get($breakpoints, $breakpoint)) {
+    $value: map.get($breakpoints, $breakpoint);
+
+    @media (min-width: $value) {
       @content;
     }
   }
 }
 
+/// Reset grid gutters
 @mixin grid-gutter-reset {
-  margin-left: 0;
-  margin-right: 0;
+  margin-inline: 0;
 
   > .col {
-    padding-left: 0;
-    padding-right: 0;
+    padding-inline: 0;
+  }
+}
+
+/// Generate column sizes for a given prefix
+/// @param {String} $prefix - Optional prefix for responsive columns
+@mixin column-sizes($prefix: '') {
+  @for $i from 1 through 12 {
+    $separator: if($prefix != '', '-', '');
+    $width: calc(100% * #{math.div($i, 12)});
+
+    &--#{$prefix}#{$separator}#{$i} {
+      flex-basis: $width;
+      max-width: $width;
+    }
+
+    @if $i < 12 {
+      &--#{$prefix}#{$separator}offset-#{$i} {
+        margin-inline-start: $width;
+      }
+    }
   }
 }
 
@@ -30,7 +53,7 @@ $breakpoints: (
   flex: 1 0 0%;
   max-width: 100%;
   min-width: 0;
-  padding: 0 $base;
+  padding-inline: $base;
   box-sizing: border-box;
 }
 
@@ -39,12 +62,13 @@ $breakpoints: (
   flex-direction: column;
 }
 
+/// Container with responsive max-widths
+/// @example
+///   <div class="container">...</div>
 .container {
   width: 100%;
-  padding-right: $base;
-  padding-left: $base;
-  margin-right: auto;
-  margin-left: auto;
+  padding-inline: $base;
+  margin-inline: auto;
   box-sizing: border-box;
 
   @each $breakpoint, $value in $breakpoints {
@@ -54,10 +78,15 @@ $breakpoints: (
   }
 }
 
+/// Flexbox grid system
+/// @example
+///   <div class="grid">
+///     <div class="col">...</div>
+///   </div>
 .grid {
   display: flex;
   flex-flow: row wrap;
-  margin: 0 (-$base);
+  margin-inline: (-$base);
   box-sizing: border-box;
 
   &--nogutter {
@@ -66,6 +95,18 @@ $breakpoints: (
 
   &--gap {
     gap: $base;
+
+    @include grid-gutter-reset;
+  }
+
+  &--gap-sm {
+    gap: calc($base / 2);
+
+    @include grid-gutter-reset;
+  }
+
+  &--gap-lg {
+    gap: calc($base * 2);
 
     @include grid-gutter-reset;
   }
@@ -103,25 +144,32 @@ $breakpoints: (
   }
 
   // Vertical alignment modifiers
-  &--align {
-    &-start {
-      align-items: flex-start;
-    }
+  &--align-start {
+    align-items: flex-start;
+  }
 
-    &-center {
-      align-items: center;
-    }
+  &--align-center {
+    align-items: center;
+  }
 
-    &-end {
-      align-items: flex-end;
-    }
+  &--align-end {
+    align-items: flex-end;
+  }
 
-    &-baseline {
-      align-items: baseline;
-    }
+  &--align-baseline {
+    align-items: baseline;
+  }
+
+  // Focus styles for accessibility
+  &:focus-visible {
+    outline: 2px solid currentcolor;
+    outline-offset: 2px;
   }
 }
 
+/// Grid column
+/// @example
+///   <div class="col col--6">Half width</div>
 .col {
   @extend %col-base;
 
@@ -134,41 +182,28 @@ $breakpoints: (
       }
 
       // Responsive sizing
-      @for $i from 1 through 12 {
-        &--#{$breakpoint}-#{$i} {
-          flex-basis: calc(100% * #{$i} / 12);
-          max-width: calc(100% * #{$i} / 12);
-        }
-
-        @if $i < 12 {
-          &--#{$breakpoint}-offset-#{$i} {
-            margin-left: calc(100% * #{$i} / 12);
-          }
-        }
-      }
+      @include column-sizes($breakpoint);
     }
   }
 
-  &--align {
-    &-top {
-      align-self: flex-start;
-    }
+  &--align-top {
+    align-self: flex-start;
+  }
 
-    &-bottom {
-      align-self: flex-end;
-    }
+  &--align-bottom {
+    align-self: flex-end;
+  }
 
-    &-middle {
-      align-self: center;
-    }
+  &--align-middle {
+    align-self: center;
+  }
 
-    &-stretch {
-      align-self: stretch;
-    }
+  &--align-stretch {
+    align-self: stretch;
+  }
 
-    &-baseline {
-      align-self: baseline;
-    }
+  &--align-baseline {
+    align-self: baseline;
   }
 
   &--top,
@@ -198,11 +233,11 @@ $breakpoints: (
   }
 
   &--push-left {
-    margin-right: auto;
+    margin-inline-end: auto;
   }
 
   &--push-right {
-    margin-left: auto;
+    margin-inline-start: auto;
   }
 
   &--fixed {
@@ -215,24 +250,20 @@ $breakpoints: (
     max-width: none;
   }
 
-  // Column sizing
-  @for $i from 1 through 12 {
-    &--#{$i} {
-      flex-basis: calc(100% * #{math.div($i, 12)});
-      max-width: calc(100% * #{math.div($i, 12)});
-    }
+  // Column sizing (base, non-responsive)
+  @include column-sizes;
 
-    @if $i < 12 {
-      &--offset-#{$i} {
-        margin-left: calc(100% * #{math.div($i, 12)});
-      }
+  // Flex grow utilities
+  @for $i from 2 through 11 {
+    &--grow-#{$i} {
+      flex-grow: $i;
     }
+  }
 
-    @if $i >= 2 and $i <= 11 {
-      &--grow-#{$i} {
-        flex-grow: $i;
-      }
-    }
+  // Focus styles for accessibility
+  &:focus-visible {
+    outline: 2px solid currentcolor;
+    outline-offset: 2px;
   }
 }
 
@@ -245,7 +276,7 @@ $breakpoints: (
   }
 
   .hidden-#{$breakpoint}-down {
-    @media (width <= calc(#{$value} - 0.01rem)) {
+    @media (width <=calc(#{$value} - 0.01rem)) {
       display: none !important;
     }
   }
@@ -261,7 +292,7 @@ $breakpoints: (
   .visible-#{$breakpoint}-down {
     display: none !important;
 
-    @media (width <= calc(#{$value} - 0.01rem)) {
+    @media (width <=calc(#{$value} - 0.01rem)) {
       display: block !important;
     }
   }
@@ -280,12 +311,14 @@ $breakpoints: (
 }
 
 // Legacy gap support fallback
+
 @supports not (gap: 1rem) {
-  .grid--gap {
-    margin: 0 calc(-1 * #{$base} / 2);
+  .grid--gap-sm,
+  .grid--gap-lg {
+    margin-inline: calc(-1 * #{$base} / 2);
 
     > .col {
-      padding: 0 calc(#{$base} / 2);
+      padding-inline: calc(#{$base} / 2);
     }
   }
 }

@@ -13,13 +13,21 @@
     "README.md",
     "LICENSE"
   ],
+  "workspaces": [
+    "packages/*"
+  ],
   "scripts": {
     "watch": "parcel watch",
-    "build": "parcel build"
+    "build": "parcel build",
+    "lint": "stylelint \"**/*.scss\"",
+    "format": "prettier --write .",
+    "update:deps": "npx npm-check-updates --deep --upgrade && bun install",
+    "build:packages": "bun run --filter './packages/*' build",
+    "clean:install": "rm -rf node_modules bun.lock .parcel-cache packages/*/node_modules packages/*/bun.lock packages/*/.parcel-cache && bun install"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/NewDesignFile/foundations.git"
+    "url": "git+https://github.com/create-new-ui/foundations.git"
   },
   "keywords": [
     "foundations",
@@ -37,13 +45,16 @@
   "author": "@planetabhi",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/NewDesignFile/foundations/issues"
+    "url": "https://github.com/create-new-ui/foundations/issues"
   },
-  "homepage": "https://github.com/NewDesignFile/foundations#readme",
+  "homepage": "https://github.com/create-new-ui/foundations#readme",
   "devDependencies": {
-    "@parcel/transformer-sass": "^2.16.1",
-    "autoprefixer": "^10.4.22",
-    "parcel": "^2.16.1"
+    "@parcel/transformer-sass": "^2.16.3",
+    "autoprefixer": "^10.4.23",
+    "parcel": "^2.16.3",
+    "prettier": "^3.7.4",
+    "stylelint": "^16.26.1",
+    "stylelint-config-standard-scss": "^16.0.0"
   },
   "dependencies": {
     "@new-ui/colors": "^2.2.1",

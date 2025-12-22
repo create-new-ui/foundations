@@ -1,6 +1,6 @@
 {
   "name": "@new-ui/effects",
-  "version": "0.1.8",
+  "version": "0.1.9",
   "description": "Layering, elevations, and effects styles",
   "source": "src/index.scss",
   "main": "dist/index.css",
@@ -19,17 +19,17 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/NewDesignFile/foundations.git"
+    "url": "git+https://github.com/create-new-ui/foundations.git"
   },
   "author": "@planetabhi",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/NewDesignFile/foundations/issues"
+    "url": "https://github.com/create-new-ui/foundations/issues"
   },
-  "homepage": "https://github.com/NewDesignFile/foundations#readme",
+  "homepage": "https://github.com/create-new-ui/foundations#readme",
   "devDependencies": {
-    "@parcel/transformer-sass": "^2.16.1",
-    "autoprefixer": "^10.4.22",
-    "parcel": "^2.16.1"
+    "@parcel/transformer-sass": "^2.16.3",
+    "autoprefixer": "^10.4.23",
+    "parcel": "^2.16.3"
   }
 }

@@ -1,22 +1,20 @@
 @use 'palette' as *;
 @use 'theme-mixins' as *;
 
-[data-new-ui-theme="light--warm"] {
+[data-new-ui-theme='light--warm'] {
   @include color-palette;
-  
   @include grey-scale(
     oklch(95.79% 0.001 106.42),
     oklch(94.39% 0.001 17.18),
-    oklch(87.66% 0.002 67.80),
-    oklch(73.07% 0.004 106.50),
+    oklch(87.66% 0.002 67.8),
+    oklch(73.07% 0.004 106.5),
     oklch(62.89% 0.006 106.57),
-    oklch(54.10% 0.008 97.45),
+    oklch(54.1% 0.008 97.45),
     oklch(43.73% 0.011 100.22),
     oklch(34.71% 0.012 100.33),
     oklch(26.31% 0.013 100.51),
     oklch(21.35% 0.012 91.77),
     'warm'
   );
-  
   @include semantic-tokens-light('warm');
 }

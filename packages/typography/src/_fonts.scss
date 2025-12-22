@@ -1,7 +1,10 @@
 :root {
   /* System Font Stacks */
   --system-ui: system-ui, sans-serif;
-  --old-style: 'Iowan Old Style', 'Palatino Linotype', 'URW Palladio L', P052, serif;
-  --monospace-code: ui-monospace, 'Cascadia Code', 'Source Code Pro', Menlo, Consolas, monospace;
-  --handwritten: 'Segoe Print', 'Bradley Hand', Chilanka, TSCu_Comic, casual, cursive;
+  --old-style:
+    'Iowan Old Style', 'Palatino Linotype', 'URW Palladio L', p052, serif;
+  --monospace-code:
+    ui-monospace, 'Cascadia Code', 'Source Code Pro', menlo, consolas, monospace;
+  --handwritten:
+    'Segoe Print', 'Bradley Hand', chilanka, tscu_comic, casual, cursive;
 }

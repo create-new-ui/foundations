@@ -1,9 +1,8 @@
 @use 'palette' as *;
 @use 'theme-mixins' as *;
 
-[data-new-ui-theme="dark"] {
+[data-new-ui-theme='dark'] {
   @include color-palette;
-  
   @include grey-scale(
     oklch(96.72% 0 0),
     oklch(90.67% 0 0),
@@ -16,6 +15,5 @@
     oklch(26.86% 0 0),
     oklch(20.02% 0 0)
   );
-  
   @include semantic-tokens-dark;
 }

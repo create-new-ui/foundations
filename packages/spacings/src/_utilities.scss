@@ -3,22 +3,46 @@
 // Semantic spacing utilities
 @mixin spacing-utilities($property, $prefix) {
   // Zero
-  .nu-u-#{$prefix}-zero { #{$property}: var(--spacing-zero); }
-  
+  .nu-u-#{$prefix}-zero {
+    #{$property}: var(--spacing-zero);
+  }
+
   // Semantic spacing scale
-  .nu-u-#{$prefix}-xs { #{$property}: var(--spacing-xs); }
-  .nu-u-#{$prefix}-s { #{$property}: var(--spacing-s); }
-  .nu-u-#{$prefix}-m { #{$property}: var(--spacing-m); }
-  .nu-u-#{$prefix}-l { #{$property}: var(--spacing-l); }
-  .nu-u-#{$prefix}-xl { #{$property}: var(--spacing-xl); }
-  .nu-u-#{$prefix}-xxl { #{$property}: var(--spacing-xxl); }
-  .nu-u-#{$prefix}-xxxl { #{$property}: var(--spacing-xxxl); }
+  .nu-u-#{$prefix}-xs {
+    #{$property}: var(--spacing-xs);
+  }
+  .nu-u-#{$prefix}-s {
+    #{$property}: var(--spacing-s);
+  }
+  .nu-u-#{$prefix}-m {
+    #{$property}: var(--spacing-m);
+  }
+  .nu-u-#{$prefix}-l {
+    #{$property}: var(--spacing-l);
+  }
+  .nu-u-#{$prefix}-xl {
+    #{$property}: var(--spacing-xl);
+  }
+  .nu-u-#{$prefix}-xxl {
+    #{$property}: var(--spacing-xxl);
+  }
+  .nu-u-#{$prefix}-xxxl {
+    #{$property}: var(--spacing-xxxl);
+  }
 }
 
 // Margins
-.nu-u-mx-auto { margin-inline: auto; }
-.nu-u-me-auto { margin-right: auto; }
-.nu-u-ms-auto { margin-left: auto; }
+.nu-u-mx-auto {
+  margin-inline: auto;
+}
+
+.nu-u-me-auto {
+  margin-right: auto;
+}
+
+.nu-u-ms-auto {
+  margin-left: auto;
+}
 
 // Margin - All sides
 @include spacing-utilities(margin, 'm');

@@ -1,6 +1,6 @@
 {
   "name": "@new-ui/foundations",
-  "version": "0.3.2",
+  "version": "0.3.3",
   "description": "New UI foundations",
   "source": "src/index.scss",
   "main": "dist/index.css",
@@ -57,10 +57,10 @@
     "stylelint-config-standard-scss": "^16.0.0"
   },
   "dependencies": {
-    "@new-ui/colors": "^2.2.1",
-    "@new-ui/effects": "^0.1.8",
-    "@new-ui/reset": "^0.1.0",
-    "@new-ui/spacings": "^0.1.7",
-    "@new-ui/typography": "^0.1.10"
+    "@new-ui/colors": "^2.2.2",
+    "@new-ui/effects": "^0.1.9",
+    "@new-ui/reset": "^0.1.1",
+    "@new-ui/spacings": "^0.1.8",
+    "@new-ui/typography": "^0.2.0"
   }
 }

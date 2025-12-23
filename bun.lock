@@ -4,11 +4,11 @@
     "": {
       "name": "@new-ui/foundations",
       "dependencies": {
-        "@new-ui/colors": "^2.2.1",
-        "@new-ui/effects": "^0.1.8",
-        "@new-ui/reset": "^0.1.0",
-        "@new-ui/spacings": "^0.1.7",
-        "@new-ui/typography": "^0.1.10",
+        "@new-ui/colors": "^2.2.2",
+        "@new-ui/effects": "^0.1.9",
+        "@new-ui/reset": "^0.1.1",
+        "@new-ui/spacings": "^0.1.8",
+        "@new-ui/typography": "^0.2.0",
       },
       "devDependencies": {
         "@parcel/transformer-sass": "^2.16.3",
@@ -64,6 +64,17 @@
         "@parcel/transformer-sass": "^2.16.3",
         "autoprefixer": "^10.4.23",
         "parcel": "^2.16.3",
+      },
+    },
+    "packages/typography": {
+      "name": "@new-ui/typography",
+      "version": "0.2.0",
+      "devDependencies": {
+        "@parcel/transformer-sass": "^2.16.3",
+        "autoprefixer": "^10.4.23",
+        "parcel": "^2.16.3",
+        "postcss": "^8.5.6",
+        "postcss-scss": "^4.0.9",
       },
     },
   },
@@ -132,7 +143,7 @@
 
     "@new-ui/spacings": ["@new-ui/spacings@workspace:packages/spacings"],
 
-    "@new-ui/typography": ["@new-ui/typography@0.1.10", "", {}, "sha512-S7ILaJ96o6c+helESvzpeyNqBTIiDB85sYv8vWd5TlpqqWUzGe39DUYRb/5zeRCEkfQ/KG/c99kEH0iaxSLdTw=="],
+    "@new-ui/typography": ["@new-ui/typography@workspace:packages/typography"],
 
     "@nodelib/fs.scandir": ["@nodelib/fs.scandir@2.1.5", "", { "dependencies": { "@nodelib/fs.stat": "2.0.5", "run-parallel": "^1.1.9" } }, "sha512-vq24Bq3ym5HEQm2NKCr3yXDwjc7vTsEThRDnkp2DK9p1uqLR+DHurm/NOTo0KG7HYHU7eppKZj3MyqYuMBf62g=="],
 

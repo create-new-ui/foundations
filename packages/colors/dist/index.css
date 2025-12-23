@@ -1025,12 +1025,6 @@
 .nu-u-text--placeholder::placeholder {
   color: var(--content-placeholder);
 }
-.nu-u-text--placeholder::input-placeholder {
-  color: var(--content-placeholder);
-}
-.nu-u-text--placeholder:input-placeholder {
-  color: var(--content-placeholder);
-}
 .nu-u-text--on-color {
   color: var(--content-on-color);
 }

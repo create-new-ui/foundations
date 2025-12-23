@@ -4,7 +4,7 @@
     "": {
       "name": "@new-ui/foundations",
       "dependencies": {
-        "@new-ui/colors": "^2.2.2",
+        "@new-ui/colors": "^2.2.3",
         "@new-ui/effects": "^0.1.9",
         "@new-ui/reset": "^0.1.1",
         "@new-ui/spacings": "^0.1.8",
@@ -21,7 +21,7 @@
     },
     "packages/colors": {
       "name": "@new-ui/colors",
-      "version": "2.2.2",
+      "version": "2.2.3",
       "devDependencies": {
         "@parcel/transformer-sass": "^2.16.3",
         "autoprefixer": "^10.4.23",

@@ -1,6 +1,6 @@
 {
   "name": "@new-ui/colors",
-  "version": "2.2.2",
+  "version": "2.2.3",
   "description": "New UI colors",
   "source": "src/index.scss",
   "main": "dist/index.css",

@@ -1,6 +1,6 @@
 {
   "name": "@new-ui/foundations",
-  "version": "0.3.3",
+  "version": "0.3.4",
   "description": "New UI foundations",
   "source": "src/index.scss",
   "main": "dist/index.css",
@@ -57,7 +57,7 @@
     "stylelint-config-standard-scss": "^16.0.0"
   },
   "dependencies": {
-    "@new-ui/colors": "^2.2.2",
+    "@new-ui/colors": "^2.2.3",
     "@new-ui/effects": "^0.1.9",
     "@new-ui/reset": "^0.1.1",
     "@new-ui/spacings": "^0.1.8",

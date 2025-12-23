@@ -2,7 +2,7 @@
 
 #### What is New UI?
 
-New UI is a modern, semantic UI framework for building beautiful, accessible websites and apps. It gives you all the core design foundations you need—colors, typography, spacing and sizing, reset, grid and layouts, and layering and elevations. It's designed to grow with you, from your first launch to millions of users. Thoughtfully made for makers, small teams, and anyone who cares about great design.
+New UI is a modern, semantic UI framework for building beautiful, accessible websites and apps. It gives you all the core design foundations you need—colors, typography, spacing and sizing, reset, grid and layouts, and layering and elevations. It's designed to grow with you, from your first launch to millions of users. Thoughtfully designed for makers and teams who value scalability and function.
 
 #### Install
 
@@ -12,7 +12,7 @@ To set up the project, open your terminal and run the following command:
 npm i -D @new-ui/foundations
 ```
 
-<strong>Note:</strong> This command installs all New UI foundation packages, which include reset, colors, effects, spacings, and typography. If you need to install only specific packages, refer to the foundations documentation for instructions.
+<strong>Note:</strong> This command installs all New UI foundation packages, which include reset, colors, effects, spacings, and typography. If you need to install only specific packages, refer to the New UI docs for instructions.
 
 #### Import
 

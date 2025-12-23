@@ -154,9 +154,7 @@
   color: var(--content-secondary-alt);
 }
 
-.nu-u-text--placeholder::placeholder,
-.nu-u-text--placeholder::input-placeholder,
-.nu-u-text--placeholder:input-placeholder {
+.nu-u-text--placeholder::placeholder {
   color: var(--content-placeholder);
 }
 

@@ -66,17 +66,6 @@
         "parcel": "^2.16.3",
       },
     },
-    "packages/typography": {
-      "name": "@new-ui/typography",
-      "version": "0.1.10",
-      "devDependencies": {
-        "@parcel/transformer-sass": "^2.16.3",
-        "autoprefixer": "^10.4.23",
-        "parcel": "^2.16.3",
-        "postcss": "^8.5.6",
-        "postcss-scss": "^4.0.9",
-      },
-    },
   },
   "packages": {
     "@babel/code-frame": ["@babel/code-frame@7.27.1", "", { "dependencies": { "@babel/helper-validator-identifier": "^7.27.1", "js-tokens": "^4.0.0", "picocolors": "^1.1.1" } }, "sha512-cjQ7ZlQ0Mv3b47hABuTevyTuYN4i+loJKGeV9flcCgIK37cCXRh+L1bd3iBHlynerhQ7BhCkn2BPbQUL+rGqFg=="],
@@ -143,7 +132,7 @@
 
     "@new-ui/spacings": ["@new-ui/spacings@workspace:packages/spacings"],
 
-    "@new-ui/typography": ["@new-ui/typography@workspace:packages/typography"],
+    "@new-ui/typography": ["@new-ui/typography@0.1.10", "", {}, "sha512-S7ILaJ96o6c+helESvzpeyNqBTIiDB85sYv8vWd5TlpqqWUzGe39DUYRb/5zeRCEkfQ/KG/c99kEH0iaxSLdTw=="],
 
     "@nodelib/fs.scandir": ["@nodelib/fs.scandir@2.1.5", "", { "dependencies": { "@nodelib/fs.stat": "2.0.5", "run-parallel": "^1.1.9" } }, "sha512-vq24Bq3ym5HEQm2NKCr3yXDwjc7vTsEThRDnkp2DK9p1uqLR+DHurm/NOTo0KG7HYHU7eppKZj3MyqYuMBf62g=="],
 

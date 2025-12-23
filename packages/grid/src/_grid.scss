@@ -313,12 +313,27 @@ $breakpoints: (
 // Legacy gap support fallback
 
 @supports not (gap: 1rem) {
-  .grid--gap-sm,
-  .grid--gap-lg {
+  .grid--gap {
     margin-inline: calc(-1 * #{$base} / 2);
 
     > .col {
       padding-inline: calc(#{$base} / 2);
+    }
+  }
+
+  .grid--gap-sm {
+    margin-inline: calc(-1 * (#{$base} / 2) / 2);
+
+    > .col {
+      padding-inline: calc(#{$base} / 4);
+    }
+  }
+
+  .grid--gap-lg {
+    margin-inline: calc(-1 * (#{$base} * 2) / 2);
+
+    > .col {
+      padding-inline: #{$base};
     }
   }
 }

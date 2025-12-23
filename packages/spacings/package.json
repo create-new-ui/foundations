@@ -1,6 +1,6 @@
 {
   "name": "@new-ui/spacings",
-  "version": "0.1.7",
+  "version": "0.1.8",
   "description": "Spacing blocks",
   "source": "src/index.scss",
   "main": "dist/index.css",
@@ -19,7 +19,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/NewDesignFile/foundations.git"
+    "url": "git+https://github.com/create-new-ui/foundations.git"
   },
   "keywords": [
     "spacings",
@@ -33,13 +33,13 @@
   "author": "@planetabhi",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/NewDesignFile/foundations/issues"
+    "url": "https://github.com/create-new-ui/foundations/issues"
   },
-  "homepage": "https://github.com/NewDesignFile/foundations#readme",
+  "homepage": "https://github.com/create-new-ui/foundations#readme",
   "devDependencies": {
-    "@parcel/transformer-css": "^2.16.1",
-    "@parcel/transformer-sass": "^2.16.1",
-    "autoprefixer": "^10.4.22",
-    "parcel": "^2.16.1"
+    "@parcel/transformer-css": "^2.16.3",
+    "@parcel/transformer-sass": "^2.16.3",
+    "autoprefixer": "^10.4.23",
+    "parcel": "^2.16.3"
   }
 }

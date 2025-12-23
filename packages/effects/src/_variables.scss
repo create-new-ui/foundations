@@ -1,11 +1,11 @@
 :root {
   // Shadows
-  --dialog-strong: 0px 16px 48px rgba(0, 0, 0, 0.16);
-  --dialog: 0px 0px 0px 0.5px rgba(0, 0, 0, 0.06),
-            0px 12px 24px rgba(0, 0, 0, 0.08), 
-            0px 2px 3px rgba(0, 0, 0, 0.04);
-  --content: 0px 2px 3px rgba(0, 0, 0, 0.06);
-  --canvas: 0px 0px 0px rgba(0, 0, 0, 0);
+  --dialog-strong: 0px 16px 48px rgb(0 0 0 / 16%);
+  --dialog:
+    0px 0px 0px 0.5px rgb(0 0 0 / 6%), 0px 12px 24px rgb(0 0 0 / 8%),
+    0px 2px 3px rgb(0 0 0 / 4%);
+  --content: 0px 2px 3px rgb(0 0 0 / 6%);
+  --canvas: 0px 0px 0px rgb(0 0 0 / 0%);
   --keyboard-key: 0 2px 0px var(--grey4);
 
   // Focus
@@ -27,17 +27,17 @@
   --blur-xs: 0.25rem;
   --blur-sm: 0.5rem;
   --blur-md: 0.75rem;
-  --blur-lg: 1.0rem;
+  --blur-lg: 1rem;
   --blur-xl: 1.5rem;
   --blur-2xl: 2.5rem;
-  --blur-3xl: 4.0rem;
+  --blur-3xl: 4rem;
 
   // Perspective
   --perspective-dramatic: 6.25rem;
   --perspective-near: 18.75rem;
   --perspective-normal: 31.25rem;
-  --perspective-midrange: 50.0rem;
-  --perspective-distant: 75.0rem;
+  --perspective-midrange: 50rem;
+  --perspective-distant: 75rem;
 
   // Aspect Video
   --aspect-video: 16 / 9;
@@ -46,4 +46,3 @@
   --default-transition-duration: 150ms;
   --default-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-

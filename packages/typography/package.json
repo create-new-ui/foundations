@@ -19,7 +19,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/NewDesignFile/foundations.git"
+    "url": "git+https://github.com/create-new-ui/foundations.git"
   },
   "keywords": [
     "typography",
@@ -35,13 +35,13 @@
   "author": "@planetabhi",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/NewDesignFile/foundations/issues"
+    "url": "https://github.com/create-new-ui/foundations/issues"
   },
-  "homepage": "https://github.com/NewDesignFile/foundations#readme",
+  "homepage": "https://github.com/create-new-ui/foundations#readme",
   "devDependencies": {
-    "@parcel/transformer-sass": "^2.16.1",
-    "autoprefixer": "^10.4.22",
-    "parcel": "^2.16.1",
+    "@parcel/transformer-sass": "^2.16.3",
+    "autoprefixer": "^10.4.23",
+    "parcel": "^2.16.3",
     "postcss": "^8.5.6",
     "postcss-scss": "^4.0.9"
   }

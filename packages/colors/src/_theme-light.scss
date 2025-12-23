@@ -1,9 +1,9 @@
 @use 'palette' as *;
 @use 'theme-mixins' as *;
 
-:root, [data-new-ui-theme="light"] {
+:root,
+[data-new-ui-theme='light'] {
   @include color-palette;
-  
   @include grey-scale(
     oklch(96.72% 0 0),
     oklch(90.67% 0 0),
@@ -16,6 +16,5 @@
     oklch(26.86% 0 0),
     oklch(20.02% 0 0)
   );
-  
   @include semantic-tokens-light;
 }
